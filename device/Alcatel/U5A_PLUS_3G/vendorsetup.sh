@@ -1,0 +1,2 @@
+add_lunch_combo full_U5A_PLUS_3G-userdebug
+add_lunch_combo full_U5A_PLUS_3G-eng
