@@ -1,0 +1,17 @@
+# Android fstab file for MT6580
+#<src>                     <mnt_point>  <type>  <mnt_flags>             <fs_mgr_flags>
+/dev/block/mmcblk0p8       /boot        emmc    defaults                defaults
+/dev/block/mmcblk0p9       /recovery    emmc    defaults                defaults
+/dev/block/mmcblk0p21      /system      ext4    ro                      wait
+/dev/block/mmcblk0p22      /cache       ext4    noatime,nosuid,nodev    wait,check
+/dev/block/mmcblk0p23      /data        ext4    noatime,nosuid,nodev    wait,check,encryptable=/dev/block/mmcblk0p17
+/dev/block/mmcblk0p2       /nvram       emmc    defaults                defaults
+/dev/block/mmcblk0p5       /persist     ext4    noatime,nosuid,nodev    wait
+/dev/block/mmcblk0p6       /seccfg      emmc    defaults                defaults
+/dev/block/mmcblk0p10      /para        emmc    defaults                defaults
+/dev/block/mmcblk0p16      /nvdata      ext4    noatime,nosuid,nodev    wait,check
+
+# Removable storage
+/dev/block/mmcblk1p1       /external_sd vfat    defaults                recoveryonly
+/devices/mtk-msdc.0/11120000.msdc0*  auto  auto  defaults                voldmanaged=sdcard0:auto,noemulatedsd
+/devices/platform/mt_usb*  auto         auto    defaults                voldmanaged=usb:auto
