@@ -24,4 +24,6 @@ BOARD_USES_MTK_HARDWARE := true
 MTK_HARDWARE := true
 
 # Recovery
-BOARD_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/Alcatel/U5A_PLUS_3G/recovery.fstab
+BOARD_HAS_LARGE_FILESYSTEM := true
+RECOVERY_SDCARD_ON_DATA := true
