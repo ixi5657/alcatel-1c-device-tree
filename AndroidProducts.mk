@@ -1,0 +1,2 @@
+PRODUCT_MAKEFILES := \
+        $(LOCAL_DIR)/U5A_PLUS_3G.mk
